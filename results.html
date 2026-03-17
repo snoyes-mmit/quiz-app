@@ -42,7 +42,7 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 4px;
-      background: linear-gradient(90deg, var(--primary), var(--teal), var(--primary));
+      background: linear-gradient(90deg, var(--primary), #000, var(--primary));
     }
 
     .trophy-wrap {
@@ -268,7 +268,7 @@
     const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
     const W = doc.internal.pageSize.getWidth();
     const H = doc.internal.pageSize.getHeight();
-    const margin = 20;
+    const margin = 10;
     const usable = W - margin * 2;
     let y = margin;
 
