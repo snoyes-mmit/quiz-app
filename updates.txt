@@ -4,7 +4,7 @@ Code-Pen editor iframe for code question
 
 15 to 20 questions
 
-link to confluence, or google?
+link to confluence
 
 Allow for multiple answers to see thought patterns for troubleshooting 
 
@@ -19,3 +19,74 @@ Afterwards email to manager option
 Mock QA of template to see how many changes you can find
 
 Once submitted it checks against source and generates grade
+
+Limit one attempt per IP address  
+
+Remove Retake Assessment Button
+
+Add time clock onClick of first question and add to PDF print out
+
+Add disclaimer that YOU ARE BEING TIMED AND PEOPLE WILL SEE
+
+
+Question List:
+
+CosmosDB
+Troubleshooting why a template is not loading in FTWeb
+  checking cosmos, checking repo, 
+
+  cosmos:
+    api connection
+
+
+  logic:
+
+  complex table structure
+
+
+  troubleshooting
+
+
+
+Choose between code examples:
+
+proper syntax for, isNotExcluded into a template 
+
+Testing Phases
+30 days (phase one)
+60 days (phase two)
+90 days (phase three)
+
+Phase 1 
+  all the time
+Phase 2
+  often
+Phase 3
+  rare
+
+
+
+
+
+Phase 1: bare bones
+test vs prod - APIs
+what stays the same
+updates
+what each pieces controls
+
+Phase 2:
+SF extracts
+Vault vs veeva extract
+indication sorting / stacking indications
+
+Phase 3:
+
+TRx
+
+
+
+
+
+Clean up confluence 
+  group sections
+  Add flow from onboarding to ...
