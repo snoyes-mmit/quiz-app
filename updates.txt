@@ -6,6 +6,8 @@ Code-Pen editor iframe for code question
 
 link to confluence, or google?
 
+Allow for multiple answers to see thought patterns for troubleshooting 
+
 directions page:
 
   open book
