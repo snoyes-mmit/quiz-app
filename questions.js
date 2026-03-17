@@ -1,14 +1,14 @@
 const QUESTIONS = [
   {
     id: 1,
-    question: "How can you break out a template from its editor in Veeva Vault without making it unusable for further GUI editing?",
+    question: "Which HTML tag is used to create a hyperlink?",
     options: [
-      "Delete the template and recreate it in HTML",
-      "Export the template HTML, modify only allowed sections, and re-upload without altering GUI-controlled structures",
-      "Convert the template to plain text before editing",
-      "Disable the GUI editor in Vault settings"
+      "&lt;link&gt;",
+      "&lt;href&gt;",
+      "&lt;a&gt;",
+      "&lt;nav&gt;"
     ],
-    answer: "Export the template HTML, modify only allowed sections, and re-upload without altering GUI-controlled structures"
+    answer: "&lt;a&gt;"
   },
   {
     id: 2,

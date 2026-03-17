@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mmit-styles.css" />
   <link rel="stylesheet" href="styles.css" />
   <!-- jsPDF for client-side PDF generation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -185,7 +186,12 @@
   if (R.percentage >= 70) {
     const duration = 3000;
     const end = Date.now() + duration;
-    const colors = ['#4f6ef7','#14b8a6','#10b981'];
+    const rootStyles = getComputedStyle(document.documentElement);
+    const colors = [
+      rootStyles.getPropertyValue('--mmit-gold').trim() || '#D4AF37',
+      rootStyles.getPropertyValue('--mmit-accent-blue').trim() || '#0066CC',
+      rootStyles.getPropertyValue('--mmit-dark-gray').trim() || '#2C2C2C',
+    ];
     (function frame() {
       confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 }, colors });
       confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 }, colors });

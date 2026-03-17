@@ -1,1 +1,15 @@
 Make so that it auto emails to Danielle once test is complete.
+
+Code-Pen editor iframe for code question
+
+15 to 20 questions
+
+link to confluence, or google?
+
+directions page:
+
+  open book
+
+QA - test with 'live' qa to submit through iframe or 'codepen' kind of window
+
+Afterwards email to manager option

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mmit-styles.css" />
   <link rel="stylesheet" href="styles.css" />
   <style>
     /* ── Landing-specific layout ── */
@@ -177,11 +178,11 @@
     <!-- Floating stat cards -->
     <div style="position:absolute;top:20%;left:10%;background:white;border-radius:1rem;padding:1rem 1.25rem;box-shadow:0 8px 32px rgba(0,0,0,.08);border:1px solid rgba(226,232,240,.8);">
       <div style="font-size:.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin-bottom:.25rem;">Score</div>
-      <div style="font-size:1.75rem;font-weight:800;color:#10b981;">18/20</div>
+      <div style="font-size:1.75rem;font-weight:800;color:#000000;">18/20</div>
     </div>
     <div style="position:absolute;bottom:25%;right:12%;background:white;border-radius:1rem;padding:1rem 1.25rem;box-shadow:0 8px 32px rgba(0,0,0,.08);border:1px solid rgba(226,232,240,.8);">
       <div style="font-size:.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin-bottom:.25rem;">Level</div>
-      <div style="font-size:1.375rem;font-weight:800;color:#4f6ef7;">Expert</div>
+      <div style="font-size:1.375rem;font-weight:800;color:#D4AF37;">Expert</div>
     </div>
   </div>
 </div>
@@ -216,7 +217,7 @@
     sessionStorage.setItem('qa_email', emailInput.value.trim());
     sessionStorage.removeItem('qa_answers');
     sessionStorage.removeItem('qa_result');
-    window.location.href = 'quiz.html';
+    window.location.href = 'main.html';
   });
 </script>
 

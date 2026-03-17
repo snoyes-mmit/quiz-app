@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Quiz Instructions</title>
+  <link rel="stylesheet" href="mmit-styles.css" />
+  <style>
+    header {
+      background:#333;
+      padding:0;
+    }
+
+    .navbar ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+    }
+
+    .navbar li{
+      position:relative;
+    }
+
+    .navbar a{
+      display:block;
+      padding:15px 20px;
+      color:white;
+      text-decoration:none;
+    }
+
+    .navbar a:hover{
+      background:#444;
+    }
+
+    /* Dropdown */
+    .dropdown-menu{
+      display:none;
+      position:absolute;
+      top:100%;
+      left:0;
+      background:#444;
+      min-width:180px;
+      flex-direction:column;
+    }
+
+    .dropdown-menu a{
+      padding:12px 16px;
+    }
+
+    .dropdown:hover .dropdown-menu{
+      display:block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container navbar">
+      <div class="logo" style="color: #D4AF37;">MMIT Assessment</div>
+      <ul>
+        <li class="dropdown">
+          <a href="#">Departments ▾</a>
+
+          <div class="dropdown-menu">
+            <a href="#">Product</a>
+            <a href="#">Configuration</a>
+            <a href="#">Quality Assurance</a>
+          </div>
+        </li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Frontend Developer Online Quiz</h1>
+      <p class="hero-subtitle">Quick, clear steps to help you finish with confidence.</p>
+      <p class="hero-description">Follow these simple instructions to prepare, navigate, and submit your quiz. Use the checklist below to keep yourself on track.</p>
+      <a href="./quiz.html" class="btn btn-primary btn-lg">Take Quiz</a>
+    </div>
+  </section>
+
+  <section id="getting-started" class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Getting Started</h2>
+        <p class="text-muted">Set up your environment and understand the rules before you begin.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-header">1. Prepare Your Space</div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <div class="feature-icon">1</div>
+                <div class="feature-content">
+                  <h4>Choose a quiet place</h4>
+                  <p>Find a distraction-free space with reliable internet access and a charged device.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="feature-icon">2</div>
+                <div class="feature-content">
+                  <h4>Gather materials</h4>
+                  <p>Have any allowed notes, calculators, or reference materials ready before you begin.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="feature-icon">3</div>
+                <div class="feature-content">
+                  <h4>Check technical requirements</h4>
+                  <p>Ensure your browser is up-to-date, pop-ups are allowed, and your webcam/microphone (if required) are working.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">2. Review the Instructions</div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <div class="feature-icon">A</div>
+                <div class="feature-content">
+                  <h4>Read the quiz guidelines</h4>
+                  <p>Look for any time limits, question types, and rules about materials you can use.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="feature-icon">B</div>
+                <div class="feature-content">
+                  <h4>Know the scoring</h4>
+                  <p>Understand whether there are penalties for wrong answers and how many points each question is worth.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="feature-icon">C</div>
+                <div class="feature-content">
+                  <h4>Locate navigation controls</h4>
+                  <p>Familiarize yourself with buttons for next/previous, flagging questions, and submitting the quiz.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pro Tips for Success</h2>
+        <p class="text-muted">Small habits that make a big difference.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-header">Stay on Track</div>
+          <div class="card-body">
+            <p>If you have a timer, monitor it regularly and pace yourself so you have time to review your answers.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">Answer Strategically</div>
+          <div class="card-body">
+            <p>Answer questions you know first. Flag anything you are unsure about and come back to it later.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">Confirm Before Submit</div>
+          <div class="card-body">
+            <p>Before you submit, make sure you have answered all required questions and reviewed flagged items.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p class="text-muted">Answers to common quiz-related concerns.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">What if I lose my connection?</div>
+        <div class="card-body">
+          <p>Your progress is usually saved automatically. If you get disconnected, reconnect and resume where you left off. Contact support if you cannot return to the quiz.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Can I go back to previous questions?</div>
+        <div class="card-body">
+          <p>Most quizzes allow you to revisit earlier questions. Use the navigation buttons and flag questions to review them later.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Is there a time extension?</div>
+        <div class="card-body">
+          <p>Any time extensions must be requested in advance. Check the quiz rules or contact your instructor for accommodations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content" style="display: none;">
+        <div class="footer-section">
+          <h3>Need Help?</h3>
+          <a href="#">Contact Support</a>
+          <a href="#">Quiz Policies</a>
+          <a href="#">Technical Guide</a>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="#getting-started">Getting Started</a>
+          <a href="#tips">Pro Tips</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-section">
+          <h3>Stay Ready</h3>
+          <p class="text-muted">Make sure your device is fully charged and your browser is updated before beginning a quiz.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 MMIT Assessment. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

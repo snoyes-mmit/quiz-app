@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMIT Landing Page</title>
+    <link rel="stylesheet" href="mmit-styles.css" />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Modern healthcare-focused product landing page using the MMIT style guide." />
+    <style>
+      header {
+        background:#333;
+        padding:0;
+      }
+
+      .navbar ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+        display:flex;
+      }
+
+      .navbar li{
+        position:relative;
+      }
+
+      .navbar a{
+        display:block;
+        padding:15px 20px;
+        color:white;
+        text-decoration:none;
+      }
+
+      .navbar a:hover{
+        background:#444;
+      }
+
+      /* Dropdown */
+      .dropdown-menu{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        background:#444;
+        min-width:180px;
+        flex-direction:column;
+      }
+
+      .dropdown-menu a{
+        padding:12px 16px;
+      }
+
+      .dropdown:hover .dropdown-menu{
+        display:block;
+      }
+
+      .quiz-card-link:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container navbar">
+        <div class="logo" style="color: #D4AF37;">MMIT Assessment</div>
+        <ul>
+          <li class="dropdown">
+            <a href="#">Departments ▾</a>
+            <div class="dropdown-menu">
+              <a href="#">Configuration</a>
+              <a href="#">Frontend Developer</a>
+              <a href="#">Product</a>
+              <a href="#">Quality Assurance</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="hero-content">
+          <!-- <p class="badge badge-primary">Launch faster · Scale smarter</p> -->
+          <h1>Assess Skills. Measure Competency. Drive Better Decisions.</h1>
+          <p class="hero-subtitle">Our assessments are designed to evaluate practical knowledge and professional competency through concise, focused quizzes. Each assessment contains 20 carefully developed questions that help gauge understanding, identify strengths, and highlight areas for improvement.</p>
+          <p class="hero-description">
+            Whether you are completing an assessment as part of a training program, professional evaluation, or skills review, our platform provides a straightforward and efficient way to measure knowledge.
+          </p>
+          <div class="flex flex-center gap-lg" >
+            <a href="./quiz-instructions.html" class="btn btn-primary btn-lg">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container grid grid-2 gap-xl">
+          <div>
+            <div class="section-header">
+              <p class="section-header-accent">Why choose us</p>
+              <h2>How it works</h2>
+            </div>
+            <ul class="feature-list">
+              
+              <li class="feature-item">
+                <span class="feature-icon">✓</span>
+                <div class="feature-content">
+                  <h4>Start Assessment</h4>
+                  <p>Select the quiz assigned to you and begin when you are ready. Each assessment contains 20 questions.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✓</span>
+                <div class="feature-content">
+                  <h4>Answer Each Question</h4>
+                  <p>Carefully review each question and select the best answer from the options provided, <span style="text-decoration: underline; font-weight: bold;">use any resource needed (confluence, emails, personal documentation, etc.)</span>.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✓</span>
+                <div class="feature-content">
+                  <h4>Submit Your Quiz</h4>
+                  <p>Once all questions are complete, submit your assessment for scoring.</p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <span class="feature-icon">✓</span>
+                <div class="feature-content">
+                  <h4>View Your Results</h4>
+                  <p>Your results will indicate your level of competency and may highlight areas where additional review may be beneficial.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section style="text-align: center;">
+        <img src="./mmit-logo.png" alt="MMIT Logo" style="width: 120px; height: 120px;">
+      </section>
+      <section id="features" class="section-light">
+        <div class="container">
+          <div class="section-header">
+            <h2>Everything your team needs to move faster</h2>
+            <p class="text-muted">
+              Our assessments are designed to measure applied knowledge and practical understanding of key concepts relevant to your role or training program.
+            </p>
+            <p class="text-muted">
+              Each quiz includes 20 multiple-choice questions selected to cover core topics and commonly encountered scenarios. Questions are structured to evaluate not only factual knowledge but also the ability to apply that knowledge effectively.
+            </p>
+            <p class="text-muted">
+              The goal of these assessments is to provide a clear and reliable snapshot of competency, helping both individuals and organizations understand current skill levels.
+            </p>
+          </div>
+
+          <h2>Department Quizzes (click below)</h2>
+          <a class="quiz-card-link" href="">
+            <div class="grid grid-3">
+              <div class="card">
+                <div class="card-header">Product Quiz</div>
+                <div class="card-body">
+                  <p>
+                    The Product assessment evaluates knowledge related to product development, planning, and cross-functional collaboration. Questions focus on areas such as product strategy, requirements definition, prioritization, user experience considerations, and working with engineering teams. This assessment measures the ability to translate business needs and user insights into clear product direction.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="quiz-card-link" href="">
+              <div class="card">
+                <div class="card-header">Configuration Quiz</div>
+                <div class="card-body">
+                  <p>
+                    The Configuration assessment measures understanding of system setup, customization, and environment management. Questions focus on configuration best practices, platform settings, workflow setup, and maintaining system consistency across environments. This quiz is designed to evaluate a candidate’s ability to configure systems effectively while supporting operational stability and scalability.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="quiz-card-link" href="./quiz-instructions.html">
+              <div class="card">
+                <div class="card-header">Frontend Development Quiz</div>
+                <div class="card-body">
+                  <p>
+                    The Frontend Development assessment evaluates knowledge of modern web development practices used to build user-facing applications. Questions focus on core concepts such as HTML, CSS, JavaScript, responsive design, performance, and common development workflows. This quiz is designed to measure a developer’s ability to create accessible, maintainable, and user-friendly interfaces.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="quiz-card-link" href="">
+              <div class="card">
+                <div class="card-header">Quality Assurance Quiz</div>
+                <div class="card-body">
+                  <p>
+                    The Quality Assurance assessment measures understanding of testing principles, defect management, and software quality practices. Questions cover topics such as test planning, test case design, regression testing, automation fundamentals, and bug reporting. The goal of this assessment is to evaluate a candidate’s ability to identify issues, ensure reliability, and support the delivery of high-quality software.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content" style="display: none;">
+          <div class="footer-section">
+            <h3>Need Help?</h3>
+            <a href="#">Contact Support</a>
+            <a href="#">Quiz Policies</a>
+            <a href="#">Technical Guide</a>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#getting-started">Getting Started</a>
+            <a href="#tips">Pro Tips</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-section">
+            <h3>Stay Ready</h3>
+            <p class="text-muted">Make sure your device is fully charged and your browser is updated before beginning a quiz.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 MMIT Assessment. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
