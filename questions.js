@@ -1,168 +1,168 @@
 const QUESTIONS = [
   {
     id: 1,
-    question: "Which HTML tag is used to create a hyperlink?",
+    question: "Which HTML snippet correctly creates a table row in an email?",
     options: [
-      "&lt;link&gt;",
-      "&lt;href&gt;",
-      "&lt;a&gt;",
-      "&lt;nav&gt;"
+      "&lt;tr&gt;&lt;/tr&gt;",
+      "&lt;row&gt;&lt;/row&gt;",
+      "&lt;td&gt;&lt;/td&gt;",
+      "&lt;table-row&gt;&lt;/table-row&gt;"
     ],
-    answer: "&lt;a&gt;"
+    answer: "&lt;tr&gt;&lt;/tr&gt;"
   },
   {
     id: 2,
-    question: "What steps should you follow to remove unnecessary CSS Reset tags that are causing issues with bold or superscript text in emails?",
+    question: "Which code correctly creates a table cell in HTML emails?",
     options: [
-      "Delete all CSS in the template",
-      "Identify reset rules affecting strong, b, or sup elements and remove or override them with inline styles",
-      "Replace all CSS with JavaScript styling",
-      "Only change font-family settings"
+      "&lt;cell&gt;Content&lt;/cell&gt;",
+      "&lt;td&gt;Content&lt;/td&gt;",
+      "&lt;tr&gt;Content&lt;/tr&gt;",
+      "&lt;col&gt;Content&lt;/col&gt;"
     ],
-    answer: "Identify reset rules affecting strong, b, or sup elements and remove or override them with inline styles"
+    answer: "&lt;td&gt;Content&lt;/td&gt;"
   },
   {
     id: 3,
-    question: "How can text wrapping issues in Outlook be resolved when working with HTML templates?",
+    question: "Which inline CSS is best practice for styling text color in email?",
     options: [
-      "Replace all tables with <div> layouts",
-      "Use fixed-width tables and apply Outlook-compatible CSS such as word-break or inline styles",
-      "Remove all width attributes from tables",
-      "Convert the email to plain text"
+      "&lt;p style='color: #000000;'&gt;Text&lt;/p&gt;",
+      "&lt;p class='text-black'&gt;Text&lt;/p&gt;",
+      "&lt;style&gt;p { color: black; }&lt;/style&gt;",
+      "&lt;p font-color='black'&gt;Text&lt;/p&gt;"
     ],
-    answer: "Use fixed-width tables and apply Outlook-compatible CSS such as word-break or inline styles"
+    answer: "&lt;p style='color: #000000;'&gt;Text&lt;/p&gt;"
   },
   {
     id: 4,
-    question: "What is the best way to handle disappearing bullet points in emails?",
+    question: "Which HTML structure is most reliable for email layout?",
     options: [
-      "Replace bullet lists with images",
-      "Avoid using lists entirely",
-      "Use table-based layouts or inline styles and ensure proper list-style-type support for Outlook",
-      "Convert bullet lists into paragraphs"
+      "&lt;div&gt;&lt;section&gt;Content&lt;/section&gt;&lt;/div&gt;",
+      "&lt;table&gt;&lt;tr&gt;&lt;td&gt;Content&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;",
+      "&lt;layout&gt;&lt;row&gt;Content&lt;/row&gt;&lt;/layout&gt;",
+      "&lt;grid&gt;Content&lt;/grid&gt;"
     ],
-    answer: "Use table-based layouts or inline styles and ensure proper list-style-type support for Outlook"
+    answer: "&lt;table&gt;&lt;tr&gt;&lt;td&gt;Content&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
   },
   {
     id: 5,
-    question: "How should variables with parentheses be wrapped in brackets for proper functionality in Handlebars JS templates?",
+    question: "Which code correctly sets a background color for a table cell in an email?",
     options: [
-      "Use a single set of parentheses around the variable",
-      "Use a single set of brackets around the variable",
-      "Wrap the variable in double curly braces while escaping parentheses if necessary",
-      "Place the variable inside quotation marks"
+      "&lt;td style='background-color: #f4f4f4;'&gt;&lt;/td&gt;",
+      "&lt;td background='#f4f4f4'&gt;&lt;/td&gt;",
+      "&lt;td bg='gray'&gt;&lt;/td&gt;",
+      "&lt;td style='bgcolor: #f4f4f4;'&gt;&lt;/td&gt;"
     ],
-    answer: "Wrap the variable in double curly braces while escaping parentheses if necessary"
+    answer: "&lt;td style='background-color: #f4f4f4;'&gt;&lt;/td&gt;"
   },
   {
     id: 6,
-    question: "What is the correct syntax for block helpers in Handlebars JS when working with conditional logic in FormTrak templates?",
+    question: "Which snippet correctly centers a table in an email?",
     options: [
-      "<if condition=\"value\">Content</if>",
-      "{{#if condition}} Content {{/if}}",
-      "{if condition} Content {/if}",
-      "if(condition){Content}"
+      "&lt;table align='center'&gt;&lt;/table&gt;",
+      "&lt;table style='margin: auto;'&gt;&lt;/table&gt;",
+      "&lt;table center='true'&gt;&lt;/table&gt;",
+      "&lt;center&gt;&lt;div&gt;...&lt;/div&gt;&lt;/center&gt;"
     ],
-    answer: "{{#if condition}} Content {{/if}}"
+    answer: "&lt;table align='center'&gt;&lt;/table&gt;"
   },
   {
     id: 7,
-    question: "How do you add a third set of brackets around variables if there is HTML in the CCFs?",
+    question: "Which HTML is best for adding spacing inside a table cell in email?",
     options: [
-      "Use triple curly braces to allow HTML rendering without escaping",
-      "Replace curly braces with square brackets",
-      "Remove the HTML from the variable entirely",
-      "Convert the variable to plain text"
+      "&lt;td padding='20'&gt;&lt;/td&gt;",
+      "&lt;td style='padding: 20px;'&gt;&lt;/td&gt;",
+      "&lt;td space='20px'&gt;&lt;/td&gt;",
+      "&lt;td margin='20px'&gt;&lt;/td&gt;"
     ],
-    answer: "Use triple curly braces to allow HTML rendering without escaping"
+    answer: "&lt;td style='padding: 20px;'&gt;&lt;/td&gt;"
   },
   {
     id: 8,
-    question: "What are best practices for configuring quick filters and plan search filters in FTW and FTV?",
+    question: "Which code correctly creates a bulletproof button for email?",
     options: [
-      "Use only default filters with no customization",
-      "Configure filters based on commonly used plan attributes and user workflow requirements",
-      "Disable filters to improve performance",
-      "Use filters only for administrative users"
+      "&lt;button&gt;Click Me&lt;/button&gt;",
+      "&lt;a href='#' style='display:inline-block; padding:10px 20px; background:#007BFF; color:#fff; text-decoration:none;'&gt;Click Me&lt;/a&gt;",
+      "&lt;div onclick='go()'&gt;Click Me&lt;/div&gt;",
+      "&lt;input type='button' value='Click Me'&gt;"
     ],
-    answer: "Configure filters based on commonly used plan attributes and user workflow requirements"
+    answer: "&lt;a href='#' style='display:inline-block; padding:10px 20px; background:#007BFF; color:#fff; text-decoration:none;'&gt;Click Me&lt;/a&gt;"
   },
   {
     id: 9,
-    question: "What HTML or CSS modifications help prevent Outlook from stripping out formatting such as bold or superscript text?",
+    question: "Which snippet correctly makes an image responsive in email?",
     options: [
-      "Use inline CSS styles and supported HTML tags",
-      "Replace all formatting with images",
-      "Avoid using formatting in emails",
-      "Use JavaScript styling functions"
+      "&lt;img src='image.jpg' style='width: 100%; height: auto;'&gt;",
+      "&lt;img src='image.jpg' responsive&gt;",
+      "&lt;img src='image.jpg' style='flex:1'&gt;",
+      "&lt;img src='image.jpg' auto-resize&gt;"
     ],
-    answer: "Use inline CSS styles and supported HTML tags"
+    answer: "&lt;img src='image.jpg' style='width: 100%; height: auto;'&gt;"
   },
   {
     id: 10,
-    question: "How can you ensure a user email displays correctly from Veeva Vault, and what code should be removed if it is not showing?",
+    question: "Which code ensures an image displays properly in email clients?",
     options: [
-      "Remove all template variables",
-      "Remove conflicting placeholder tags or unsupported merge syntax",
-      "Delete the email field from the template",
-      "Replace the variable with static text"
+      "&lt;img src='image.jpg'&gt;",
+      "&lt;img src='image.jpg' alt='Description' border='0' style='display:block;'&gt;",
+      "&lt;image src='image.jpg'&gt;",
+      "&lt;img href='image.jpg'&gt;"
     ],
-    answer: "Remove conflicting placeholder tags or unsupported merge syntax"
+    answer: "&lt;img src='image.jpg' alt='Description' border='0' style='display:block;'&gt;"
   },
   {
     id: 11,
-    question: "What troubleshooting steps should be taken if bullet points disappear in emails sent via Outlook?",
+    question: "Which HTML snippet correctly sets font size inline for email?",
     options: [
-      "Disable HTML emails entirely",
-      "Verify list styles, apply inline formatting, and test with table-based structures",
-      "Replace bullets with emojis",
-      "Convert the email into an attachment"
+      "&lt;p style='font-size:16px;'&gt;Text&lt;/p&gt;",
+      "&lt;p size='16px'&gt;Text&lt;/p&gt;",
+      "&lt;font size='16px'&gt;Text&lt;/font&gt;",
+      "&lt;p font='16px'&gt;Text&lt;/p&gt;"
     ],
-    answer: "Verify list styles, apply inline formatting, and test with table-based structures"
+    answer: "&lt;p style='font-size:16px;'&gt;Text&lt;/p&gt;"
   },
   {
     id: 12,
-    question: "What is the recommended approach for structuring JSON entries for CosmosDB in FormTrak templates?",
+    question: "Which code is safest for setting line height in email?",
     options: [
-      "Use unstructured text fields",
-      "Follow a consistent schema with clearly defined keys and nested objects",
-      "Store all data in a single string value",
-      "Avoid using arrays in JSON"
+      "&lt;p style='line-height: 24px;'&gt;Text&lt;/p&gt;",
+      "&lt;p line='24px'&gt;Text&lt;/p&gt;",
+      "&lt;p spacing='24px'&gt;Text&lt;/p&gt;",
+      "&lt;p style='text-spacing:24px'&gt;Text&lt;/p&gt;"
     ],
-    answer: "Follow a consistent schema with clearly defined keys and nested objects"
+    answer: "&lt;p style='line-height: 24px;'&gt;Text&lt;/p&gt;"
   },
   {
     id: 13,
-    question: "How can JSON entries be validated to ensure compatibility with CosmosDB and FormTrak requirements?",
+    question: "Which snippet correctly creates a two-column layout in email?",
     options: [
-      "Manually review the file without tools",
-      "Use JSON validators and confirm schema alignment with FormTrak data structures",
-      "Convert JSON to XML before uploading",
-      "Remove all nested objects"
+      "&lt;div style='display:flex'&gt;&lt;div&gt;1&lt;/div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;",
+      "&lt;table&gt;&lt;tr&gt;&lt;td&gt;Col 1&lt;/td&gt;&lt;td&gt;Col 2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;",
+      "&lt;columns&gt;&lt;col&gt;1&lt;/col&gt;&lt;col&gt;2&lt;/col&gt;&lt;/columns&gt;",
+      "&lt;grid&gt;&lt;item&gt;1&lt;/item&gt;&lt;item&gt;2&lt;/item&gt;&lt;/grid&gt;"
     ],
-    answer: "Use JSON validators and confirm schema alignment with FormTrak data structures"
+    answer: "&lt;table&gt;&lt;tr&gt;&lt;td&gt;Col 1&lt;/td&gt;&lt;td&gt;Col 2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
   },
   {
     id: 14,
-    question: "What are best practices for handling overrides and dynamic data in JSON for CosmosDB?",
+    question: "Which CSS is most reliable for hiding content in email?",
     options: [
-      "Hardcode all values directly into the template",
-      "Use structured override fields and dynamic keys aligned with template logic",
-      "Avoid dynamic data entirely",
-      "Store overrides in separate HTML files"
+      "display: none;",
+      "visibility: hidden;",
+      "opacity: 0;",
+      "hide: true;"
     ],
-    answer: "Use structured override fields and dynamic keys aligned with template logic"
+    answer: "display: none;"
   },
   {
     id: 15,
-    question: "What steps should be followed to delete all columns and re-add them when updating FormTrak templates?",
+    question: "Which snippet correctly applies a font family inline in email?",
     options: [
-      "Delete the template entirely and recreate it",
-      "Remove column definitions, refresh the schema, and re-add required columns with updated mappings",
-      "Only rename existing columns",
-      "Convert columns to plain text fields"
+      "&lt;p style='font-family: Arial, sans-serif;'&gt;Text&lt;/p&gt;",
+      "&lt;p font='Arial'&gt;Text&lt;/p&gt;",
+      "&lt;font face='Arial'&gt;Text&lt;/font&gt;",
+      "&lt;p style='font: Arial'&gt;Text&lt;/p&gt;"
     ],
-    answer: "Remove column definitions, refresh the schema, and re-add required columns with updated mappings"
+    answer: "&lt;p style='font-family: Arial, sans-serif;'&gt;Text&lt;/p&gt;"
   },
   {
     id: 16,
