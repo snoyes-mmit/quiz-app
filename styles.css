@@ -87,6 +87,11 @@ body {
   transform: translateY(0);
 }
 
+.phase-btn-wrapper {
+  display: flex;
+  justify-content: space-around; 
+}
+
 .btn-outline {
   background: transparent;
   color: var(--slate-700);
